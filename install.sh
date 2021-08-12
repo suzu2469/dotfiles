@@ -13,7 +13,5 @@ ln -sf ~/dotfiles/.zshrc ~/.zshrc
 ln -sf ~/dotfiles/.zpreztorc ~/.zpreztorc
 ln -sf ~/dotfiles/.vim ~/.vim
 
-chsh -s $(which zsh)
-
 source ~/dotfiles/.zshrc
 source ~/dotfiles/.zpreztorc
