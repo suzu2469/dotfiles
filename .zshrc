@@ -10,6 +10,7 @@ export PATH=$PATH:/usr/local/bin/node
 export PATH=$PATH:/usr/local/bin
 export PATH=$PATH:$HOME/.cargo/bin
 export PATH=$PATH:`yarn global bin`
+export PATH="/Users/suzukisouma/.local/bin:$PATH"
 
 # cool-peco
 FPATH="$FPATH:$HOME/dotfiles/cool-peco"
@@ -34,3 +35,14 @@ function peco-src () {
 zle -N peco-src
 bindkey '^p' peco-src
 
+export VOLTA_HOME="$HOME/.volta"
+export PATH="$VOLTA_HOME/bin:$PATH"
+
+eval "$(rbenv init -)"
+
+export PYENV_ROOT="$HOME/.pyenv"
+export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init --path)"
+eval "$(pyenv init -)"
+
+eval "$(pyenv virtualenv-init -)"
