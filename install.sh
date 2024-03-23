@@ -7,11 +7,11 @@ for rcfile in "${ZDOTDIR:-$HOME}"/.zprezto/runcoms/^README.md(.N); do
  ln -s "$rcfile" "${ZDOTDIR:-$HOME}/.${rcfile:t}"
 done
 
-ln -sf ~/dotfiles/.zprezto ~/.zprezto
-ln -sf ~/dotfiles/.vimrc ~/.vimrc
-ln -sf ~/dotfiles/.zshrc ~/.zshrc
-ln -sf ~/dotfiles/.zpreztorc ~/.zpreztorc
-ln -sf ~/dotfiles/.vim ~/.vim
+ln -sf ${PWD}/.zprezto ~/.zprezto
+ln -sf ${PWD}/.vimrc ~/.vimrc
+ln -sf ${PWD}/.zshrc ~/.zshrc
+ln -sf ${PWD}/.zpreztorc ~/.zpreztorc
+ln -sf ${PWD}/.vim ~/.vim
 
-source ~/dotfiles/.zshrc
-source ~/dotfiles/.zpreztorc
+source ~/.zshrc
+source ~/.zpreztorc
